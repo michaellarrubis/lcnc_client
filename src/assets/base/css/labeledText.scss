@@ -1,0 +1,45 @@
+@import '../mixins/mixins.scss';
+
+.labeled-text {
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+
+    @include loading;
+
+    &.description {
+      white-space: pre-wrap;
+    }
+  }
+}
+
+.label-text-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 240px;
+  overflow: auto;
+  align-content: flex-start;
+
+  @media screen and (max-width: 767px) {
+    max-height: 100%;
+  }
+}
+
+.label-text-item {
+  margin: 5px 35px 0 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 5px 0 0;
+  }
+}

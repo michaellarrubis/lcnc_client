@@ -1,0 +1,69 @@
+@import './mixins/mixins.scss';
+@import './css/sidebar.scss';
+@import './css/mainView.scss';
+@import './css/content.scss';
+@import './css/search.scss';
+@import './css/header.scss';
+@import './css/userpanel.scss';
+@import './css/dashboard.scss';
+@import './css/button.scss';
+@import './css/tally.scss';
+@import './css/button.scss';
+@import './css/event.scss';
+@import './css/member.scss';
+@import './css/colorpicker.scss';
+@import './css/box.scss';
+@import './css/backButton.scss';
+@import './css/pagination.scss';
+@import './css/costcenter.scss';
+@import './css/toast.scss';
+
+@font-face {
+  font-family: 'Stolzl';
+  src: local('Stolzl'), url(./fonts/Stolzl-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl Book';
+  src: local('Stolzl Book'), url(./fonts/Stolzl-Book.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl Medium';
+  src: local('Stolzl Medium'), url(./fonts/Stolzl-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl Bold';
+  src: local('Stolzl Bold'), url(./fonts/Stolzl-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: local('Verdana'), url(./fonts/Verdana.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), url(./fonts/Montserrat-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Stolzl Book';
+  src: local('Stolzl Book'), url(./fonts/Stolzl-Book.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl Medium';
+  src: local('Stolzl Medium'), url(./fonts/Stolzl-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl Bold';
+  src: local('Stolzl Bold'), url(./fonts/Stolzl-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: local('Verdana'), url(./fonts/Verdana.woff) format('woff');
+}

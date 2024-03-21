@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-0.704 -0.704)">
+    <g id="save" transform="translate(0.492 0.492)">
+      <rect id="Rectangle_1691" data-name="Rectangle 1691" width="15" height="15" transform="translate(0.212 0.212)" fill="#fff" opacity="0"/>
+      <rect id="Rectangle_1692" data-name="Rectangle 1692" width="2" height="2" transform="translate(6.212 11.212)" fill="#fff"/>
+      <path id="Path_923" data-name="Path 923" d="M14.233,6.746,11.064,3.577A1.968,1.968,0,0,0,9.673,3H7.593V6.937h3.281a.656.656,0,1,1,0,1.312H6.937a.656.656,0,0,1-.656-.656V3H4.968A1.968,1.968,0,0,0,3,4.968v7.873A1.968,1.968,0,0,0,4.968,14.81H6.281V12.186a1.312,1.312,0,0,1,1.312-1.312h2.624a1.312,1.312,0,0,1,1.312,1.312V14.81h1.312a1.968,1.968,0,0,0,1.968-1.968v-4.7a1.968,1.968,0,0,0-.577-1.391Z" transform="translate(-1.566 -1.566)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

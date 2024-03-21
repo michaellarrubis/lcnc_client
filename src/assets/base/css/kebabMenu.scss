@@ -1,0 +1,77 @@
+.kebab-menu {
+  position: relative;
+}
+
+.kebab-menu__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.kebab-menu__tooltip-arrow {
+  position: absolute;
+  top: 45px;
+  right: 2px;
+  z-index: 1;
+  width: 55px;
+  height: 46px;
+  background-color: #fff;
+  transform: skewY(-39deg);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.kebab-menu__tooltip-menu {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  padding: 21px 19px;
+  border-radius: 10px;
+  pointer-events: none;
+  background-color: var(--white);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  &.kebab-menu__tooltip-menu--active {
+    top: 43px;
+    right: 2px;
+    opacity: 1;
+    pointer-events: auto;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 0;
+      width: 24px;
+      height: 22px;
+      background-color: #ffffff;
+      transform: skewY(-39deg);
+      z-index: 1;
+    }
+  }
+}
+
+.kebab-menu__tooltip-menu-list {
+  list-style: none;
+  font-size: 12px;
+  width: 161px;
+  max-width: 100%;
+}
+
+.kebab-menu__tooltip-menu-list-item {
+  padding: 8px 10px 7px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--lightestGray);
+    transition: background-color 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,32 @@
+.team__item {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.team__row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.team__column {
+  flex: 1 0 340px;
+  margin-top: 5px;
+}
+
+.members__column {
+  columns: 3 20.1rem;
+
+  @media screen and (max-width: 767px) {
+    columns: 1 auto;
+  }
+}
+
+.team__label {
+  font-size: 12px;
+}

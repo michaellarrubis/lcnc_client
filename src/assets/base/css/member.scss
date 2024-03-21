@@ -1,0 +1,87 @@
+.members__list-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border: 1px solid #eee;
+
+  &:not(:first-child) {
+    margin-top: 7px;
+  }
+}
+
+.members__wrapper {
+  position: relative;
+  margin-top: 30px;
+}
+
+.members__inner {
+  margin-top: 22px;
+}
+
+.members__count {
+  position: relative;
+  flex: 40%;
+}
+
+.members__team {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+
+  &-name {
+    font-size: 12px;
+  }
+
+  &-total {
+    font-size: 10px;
+  }
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member {
+  direction: rtl;  
+  text-align: left; 
+  
+
+  &:not(:first-child) {
+    padding-left: 25px; 
+
+    .member__img {
+      margin-left: -30px;
+    }
+  }
+}
+
+.member__img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #fff;
+}
+
+.member__count {
+  position: absolute;
+  top: 1px;
+  left: 64px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  width: 24px;
+  height: 24px;
+  font-size: 8px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member__title {
+  font-size: 16px;
+}

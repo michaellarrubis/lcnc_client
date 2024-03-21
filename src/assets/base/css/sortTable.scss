@@ -1,0 +1,140 @@
+.sort-table__container {
+  width: 100%;
+  margin-top: 30px;
+  overflow: auto;
+  min-height: 200px;
+
+  &-title {
+    color: #232932;
+    margin-bottom: 18px;
+
+    &.flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        position: relative;
+        font-size: 12px;
+        padding: 10px;
+        border-bottom: 2px solid var(--lightGrayBorder);
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--lightGray);
+        cursor: pointer;
+
+        &.action-column {
+          visibility: hidden;
+        }
+
+        &[data-key='actions'].multiple-action-column {
+          width: 50px;
+        }
+
+        &:not(.action-column)::after {
+          position: absolute;
+          content: url('../icons/sortingArrows.svg');
+          margin-left: 10px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &.is-editing {
+          background-color: var(--lightestGray);
+        }
+
+        &:last-child {
+          border-bottom: 2px solid var(--lightGrayBorder);
+        }
+
+        &.sub-row {
+          background-color: var(--lightestGray);
+        }
+      }
+
+      td {
+        font-size: 14px;
+        color: var(--mainColor);
+        border-bottom: 1px dashed var(--lightGray);
+        padding: 11px;
+        text-transform: capitalize;
+
+        .actions--delete {
+          margin-left: 10px;
+        }
+
+        span {
+          font-size: 12px;
+          border-radius: 12px;
+          padding: 4px 8px;
+          color: #ffffff;
+          text-transform: uppercase;
+
+          &.status-ongoing {
+            background-color: #19e3e6;
+          }
+
+          &.status-pending {
+            background-color: #e83030;
+          }
+
+          &.status-submitted {
+            background-color: #3441f4;
+          }
+
+          &.status-finished {
+            background-color: #21af07;
+          }
+        }
+      }
+    }
+  }
+
+  &-multi-data {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    .sort-table__container-data {
+      padding-left: 15px;
+    }
+  }
+
+  &-image {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  &-image-data {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  &-edit {
+    display: flex;
+    align-items: center;
+  }
+
+  .clickable_result {
+    tr {
+      cursor: pointer;
+    }
+  }
+}

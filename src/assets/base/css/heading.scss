@@ -1,0 +1,14 @@
+.heading__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading__button-inner {
+  margin-left: 10px;
+}

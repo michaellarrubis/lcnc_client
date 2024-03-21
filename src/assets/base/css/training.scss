@@ -1,0 +1,22 @@
+.training__progress {
+  margin-top: 10px!important;
+}
+
+.training__wrapper {
+  border-bottom: 1px dashed var(--lightGrayBorder);
+  padding: 18px 0;
+
+  &:last-child {
+    border-bottom: 2px solid var(--lightGrayBorder);
+  }
+}
+
+.training__label {
+  font-size: 14px;
+}
+
+.training__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

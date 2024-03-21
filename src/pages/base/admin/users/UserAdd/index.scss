@@ -1,0 +1,137 @@
+@mixin sp {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 1001px) {
+    @content;
+  }
+}
+
+.user-add {
+
+  input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px white inset;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__control-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    margin-top: 20px;
+
+    @include sp {
+      padding: 12px;
+    }
+  }
+  
+  .form {
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+
+      @include sp {
+        flex-direction: column;
+      }
+
+      &:not(:first-child) {
+        margin-top: 20px;
+
+        @include sp {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__input {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: flex-end;
+      position: relative;
+
+      @include sp {
+        margin-top: 12px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 20px;
+
+        @include sp {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__input-label {
+      font-size: 12px;
+    }
+
+    &__input-control {
+      font-family: "Stolzl";
+      font-size: 14px;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 5px;
+      width: 100%;
+
+      &--select {
+        padding: 9px 10px;
+        appearance: none;
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position: center right;
+        background-image: url('src/assets/base/icons/dropdown.svg');
+      }
+    }
+  }
+
+  .button {
+    &--pc {
+      @include pc {
+        display: inline-block;
+      }
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &--sp {
+      margin: 20px 0;
+      justify-content: center;
+
+      @include pc {
+        display: none;
+      }
+
+      @include sp {
+        display: flex;
+
+        & .button__text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::before {
+            left: auto;
+            display: block;
+            position: relative;
+            margin-right: 4px;
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}

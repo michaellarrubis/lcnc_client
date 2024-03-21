@@ -1,0 +1,138 @@
+.available-resource__container {
+  width: 100%;
+}
+
+.available-resource__heading {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0;
+
+  &.available-resource__heading--inner {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+  }
+}
+
+.available-resource__breadcrumbs {
+  margin-top: 18px;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.available-resource__breadcrumbs-list {
+  list-style: none;
+  display: flex;
+}
+
+.available-resource__breadcrumbs-item {
+  &:not(:last-child) {
+    &:after {
+      display: inline-block;
+      content: '>';
+      padding: 0 3px;
+    }
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: var(--gray);
+    }
+  }
+}
+
+.available-resource__section {
+  margin-top: 20px;
+  padding: 10px 0;
+
+  .available-resource__section--heading {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.available-resource__content {
+  background-color: var(--lightestGray);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 20px;
+
+  &:not(:first-child) {
+    margin-top: 18px;
+  }
+}
+
+.available-resource__item {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.available-resource__label {
+  font-size: 12px;
+
+  &.available-resource-hidden__label {
+    margin-right: 20px;
+  }
+}
+
+.available-resource__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.available-resource__column {
+  padding: 10px;
+}
+
+.tab__content {
+
+  &.is-shaded {
+    background-color: white;
+  }
+
+  &.is-padded {
+    padding: 0px;
+  }
+}
+
+.available-resource-filter__content {
+  padding: 30px;
+  background-color: var(--lightestGray);
+
+  .available-resource-filter__content--search {
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+      flex-grow: 1;
+      max-width: 50%;
+    }
+  }
+
+  .available-resource-filter__title {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--lightGray);
+    text-transform: uppercase;
+  }
+
+  .available-resource-filter__content--filter {
+    margin-top: 10px;
+    display: flex;
+
+    & > div {
+      flex-grow: 1;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

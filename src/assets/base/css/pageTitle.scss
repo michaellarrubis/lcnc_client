@@ -1,0 +1,16 @@
+.page-title {
+  letter-spacing: 0;
+  font-size: 20px;
+
+  &.has-back-btn {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.reports__container {
+  .page-title {
+    margin-bottom: 20px; 
+  }
+}
+

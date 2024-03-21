@@ -1,0 +1,38 @@
+.icon-button {
+  position: relative;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  pointer-events: auto;
+  cursor: pointer;
+
+  &.color-light {
+    background-color: var(--lightestGray);
+  }
+
+  &.color-dark {
+    background-color: var(--mainColor);
+  }
+
+  .icon-button__icon {
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &.edit-icon {
+      background-image: url(../icons/edit.svg);
+    }
+
+    &.save-icon {
+      background-image: url(../icons/save.svg);
+    }
+
+    &.delete-icon {
+      width: 14px;
+      height: 14px;
+      background-image: url(../icons/trash.svg);
+    }
+  }
+}

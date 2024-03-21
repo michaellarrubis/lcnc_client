@@ -1,0 +1,37 @@
+.g-search {
+    display: flex;
+    width: 399px;
+    max-width: 399px;
+    margin-left: 14px;
+    font-family: 'Stolzl Book';
+    ::placeholder {
+      color: #797979;
+    }
+}
+
+.right-inner-addon  {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+
+.g-search__input {
+    width: 100%;
+    font-size: 12px;
+    padding: 12px 0px;
+    border: 1px solid var(--grayBorder);
+    background-color: #f0f0f0;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}
+
+.g-search__button {
+    padding: 0 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    pointer-events: auto;
+    cursor: pointer;
+}

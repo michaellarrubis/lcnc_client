@@ -1,0 +1,46 @@
+.form-confirm-fields {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__label {
+    display: flex;
+    font-size: 12px;
+  }
+
+  &__value {
+    display: flex;
+    font-size: 14px;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__title {
+    margin: 0 60px 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    .button {
+      &.button__default {
+        .button__text {
+          padding: 0;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-left: 20px;
+      }
+    }
+  }
+}

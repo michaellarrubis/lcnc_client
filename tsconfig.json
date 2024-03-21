@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "paths": {
+      "src/*": ["src/*"],
+      "@baseComponents/*": ["src/components/base/*"],
+      "@baseHooks/*": ["src/hooks/base/*"],
+      "@baseLayouts/*": ["src/layouts/base/*"],
+      "@basePages/*": ["src/pages/base/*"],
+      "@baseStores/*": ["src/store/modules/base/*"],
+      "@baseUtils/*": ["src/utils/base/*"]
+    }
+  },
+  "include": [
+    "src",
+    "vite.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,23 @@
+.box {
+  position: relative;
+  padding: 30px;
+  background-color: var(--lightestGray);
+
+  &.outline {
+    background-color: transparent;
+    border: 1px solid var(--lightGrayBorder);
+  }
+
+  &.small {
+    padding: 15px;
+  }
+
+  &--padding {
+    background-color: var(--lightestGray);
+
+    &.outline {
+      background-color: transparent;
+      border: 1px solid var(--lightGrayBorder);
+    }
+  }
+}

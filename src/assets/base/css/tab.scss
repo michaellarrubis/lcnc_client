@@ -1,0 +1,137 @@
+.tab__container {
+  width: 100%;
+  height: 250px;
+  margin-top: 28px;
+}
+
+.tab__list {
+  height: 40px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  /*flex-wrap: wrap;*/
+  overflow-x: auto;
+  position: relative;
+  z-index: 1;
+  top: 2px;
+}
+
+.tab {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray);
+  position: relative;
+  color: var(--white);
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  border-radius: 8px 8px 0 0;
+  font-size: 14px;
+  /*padding: 0.6rem 1.25rem;*/
+  /*padding: 0 20px;*/
+  padding: 0;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: var(--white);
+    }
+  }
+
+  &:not(:first-child) {
+    margin-left: 5px;
+
+    /*@media (max-width: 500px) {
+      margin-left: 0;
+    }*/
+  }
+
+  &.active-tabs {
+    background: var(--white);
+    border-bottom: 2px solid var(--white);
+    /*margin-bottom: -3px !important;*/
+    color: var(--mainColor);
+    font-weight: bold;
+
+    a {
+      color: var(--mainColor);
+    }
+  }
+}
+
+.tab__content-container {
+  border-top: 2px solid var(--gray);
+  padding: 25px 0;
+}
+
+.tab__content {
+  display: none;
+
+  &.is-padded {
+    padding: 43px 37px;
+  }
+
+  &.is-shaded {
+    background-color: var(--lightestGray);
+  }
+
+  &.tab__content-other {
+    background-color: var(--white);
+    padding: 0;
+  }
+
+  &.active-content {
+    /*display: flex;*/
+    display: block;
+  }
+
+  .team__container,
+  .others__container,
+  .account__container {
+    overflow: auto;
+  }
+
+  .team__row {
+    @media (max-width: 590px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .team__column {
+    flex: 0 0 33.3%;
+
+    @media (max-width: 767px) {
+      flex: 0 0 41%;
+    }
+
+    @media (max-width: 590px) {
+      flex: 0 0 240px;
+
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .members__column {
+    columns: 3 auto;
+    width: 100%;
+    gap: 0;
+
+    @media screen and (max-width: 767px) {
+      columns: 1 auto;
+    }
+  }
+}
+

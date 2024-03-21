@@ -1,0 +1,140 @@
+.skills__add-wrapper {
+  .button {
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .button__save {
+    @media screen and (max-width: 360px) {
+      width: 108px;
+      position: absolute;
+      top: 45px;
+      right: 0;
+    }
+  }
+
+  .skillsList__add-skill-hide {
+    display: none;
+  }
+
+  .skillsList__add-skill-show {
+    display: block;
+  }
+
+  .skills__add-skill-hide {
+    display: none;
+  }
+
+  .skills__add-skill-show {
+    display: block;
+  }
+
+  .skills__add-skill-heading {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+      position: relative;
+      height: 105px;
+    }
+
+    .section-title {
+      padding-top: 13px;
+    }
+  }
+
+  .box {
+    position: relative;
+    padding: 30px;
+  }
+
+  .skills__add-skill-form {
+    margin: 10px 0 55px 0;
+
+    @media screen and (max-width: 1050px) {
+      margin: 0 0 50px 0;
+    }
+  }
+
+  .skills__row {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child){
+      margin: 35px 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .skills__column-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .skills__column {
+      margin: 0 25px 0 25px;
+      width: 33.33%;
+
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+        margin: 25px 0 0 0;
+      }
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:last-child {
+        margin: 0;
+
+        @media screen and (max-width: 1050px) {
+          margin: 25px 0 0 0;
+        }
+      }
+    } 
+  }
+
+  .skills__input-select {
+    max-width: 100%;
+    min-width: unset;
+    padding: 8px 32px 8px 8px;
+    background-position: right 13px center;
+    background-origin: unset;
+  }
+}
+
+.dialog-fields {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 60px 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    .button {
+      &.button__default {
+        .button__text {
+          padding: 0;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-left: 20px;
+      }
+    }
+  }
+}

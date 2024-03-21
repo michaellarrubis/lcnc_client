@@ -1,0 +1,46 @@
+.occupancy-ratio-section__container {
+  width: 100%;
+}
+
+.occupancy-ratio-sub-section {
+  padding: 0 15px 15px 50px;
+  @media (max-width: 820px) {
+    padding: 0 10px 15px 30px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 24px;
+  }
+}
+
+.occupancy-ratio-sub-section__content {
+  display: grid;
+  grid-template-columns: 28% 12% 15% 15%;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 45% 1fr 1fr 1fr;
+  }
+}
+
+.occupacy-ratio-sub-section__row--wrapper {
+  display: grid;
+  grid-template-columns: 100% 100%;
+}
+
+.occupancy-ratio-sub-section__column {
+  padding: 5px;
+  margin-top: -5px;
+}
+
+.occupancy-ratio-sub-section__label {
+  font-size: 12px;
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
+  &:hover .tooltip__description {
+    visibility: visible;
+  }
+}
+
+.occupancy-ratio-sub-section__description {
+  padding-left: 20px;
+}

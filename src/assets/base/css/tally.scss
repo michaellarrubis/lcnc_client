@@ -1,0 +1,32 @@
+.tally__container {
+  position: relative;
+  width: 100%;
+  // width: 45%;
+
+  &.tally__label-with-border {
+    border-bottom: 2px solid var(--lightGrayBorder);
+    padding-bottom: 10px;
+  }
+}
+
+.tally__label {
+  font-size: 14px;
+  white-space: pre;
+
+  .tally__training & {
+    font-size: 16px;
+  }
+}
+
+.tally {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffd469;
+}
+
+.tally__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

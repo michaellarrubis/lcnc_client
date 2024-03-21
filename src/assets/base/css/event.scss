@@ -1,0 +1,50 @@
+.event__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.event__title {
+  font-size: 16px;
+}
+
+.event__menu {
+  margin-top: 20px;
+}
+
+.event__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--lightGrayBorder);
+  padding: 14px 20px;
+  margin-bottom: 5px;
+}
+
+.event__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.event__month {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--mainColor);
+}
+
+.event__day {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+.event__name-container {
+  margin-right: 45px;
+}
+
+.event__name {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--mainColor)
+}

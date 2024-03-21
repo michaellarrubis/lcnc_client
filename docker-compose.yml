@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  lcnc-frontend:
+    container_name: lcnc-frontend
+    build: .
+    working_dir: /app/src
+    command: yarn start
+    volumes:
+      - ./:/app
+      
+    ports:
+      - '40025:3000'

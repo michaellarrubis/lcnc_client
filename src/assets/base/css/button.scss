@@ -1,0 +1,163 @@
+.button {
+  position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+
+  &.flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &.mr-15 {
+    margin-right: 15px;
+  }
+
+  &.default {
+    background-color: var(--lightGrayBorder);
+  }
+
+  &.dark {
+    background-color: var(--mainColor);
+    color: var(--white);
+  }
+
+  &.is-disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.button__text {
+  font-family: 'Stolzl';
+  padding-left: 15px;
+  white-space: nowrap;
+
+  .button__add & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/add.svg');
+    }
+  }
+
+  .button__add-white & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/addWhite.svg');
+    }
+  }
+
+  .button__save & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/save.svg');
+    }
+  }
+
+  .button__view & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/view.svg');
+    }
+  }
+
+  .button__arrow & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/arrow.svg');
+    }
+  }
+
+  .button__info & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/info.svg');
+    }
+  }
+
+  .button__edit & {
+    &::before {
+      position: absolute;
+      left: 20px;
+      content: url('../icons/edit.svg');
+    }
+  }
+}
+
+.button__info_sp_bottom {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .button__info_sp {
+    display: none;
+  }
+
+  .button__info_sp_bottom {
+    display: block;
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .button__info_sp {
+    right: -5%;
+    font-size: 10px;
+    padding: 11px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button__info_sp {
+    right: -10%;
+    font-size: 8.5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .button__info_sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .button__info .button__text::before {
+    left: 15px;
+  }
+  .button__info_sp_bottom {
+    padding: 8% 20%;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .button__info .button__text::before {
+    left: 12px;
+  }
+
+  .button__info_sp_bottom {
+    padding: 8% 16%;
+    font-size: 10px;
+  }
+}
+
+.whitespace-nowrap.text-right {
+  button {
+    &:first-child {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  button:disabled {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

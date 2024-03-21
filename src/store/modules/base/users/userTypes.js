@@ -1,0 +1,13 @@
+export const SET_USER = 'SET_USER';
+export const SET_USER_INFO = 'SET_USER_INFO';
+export const SET_USER_INFO_BYID = 'SET_USER_INFO_BYID';
+export const GET_USER_SKILLS_BYID = 'GET_USER_SKILLS_BYID';
+export const REMOVE_USER = 'REMOVE_USER';
+export const SET_USER_BY_IMAGE = 'SET_USER_BY_IMAGE';
+export const SET_USER_IMAGE_LIST = 'SET_USER_IMAGE_LIST';
+export const FETCH_DATA = 'FETCH_DATA';
+export const FETCH_ALL_USERS = 'FETCH_ALL_USERS';
+export const SET_USER_BYID = 'SET_USER_BYID';
+export const FETCH_USER_BYID = 'FETCH_USER_BYID';
+export const SET_ALL = 'SET_ALL_DATA';
+export const GET_ALL = 'GET_ALL_DATA';

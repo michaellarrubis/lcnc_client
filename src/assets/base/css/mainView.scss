@@ -1,0 +1,16 @@
+.mainView {
+  @media screen and (max-width: 767px) {
+    padding: 25px;
+  }
+}
+
+.mainView__inner {
+  margin-top: 24px;
+}
+
+.mainView__height {
+  height: calc(100vh - 60px);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
